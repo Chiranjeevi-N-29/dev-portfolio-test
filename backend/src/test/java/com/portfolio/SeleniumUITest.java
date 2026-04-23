@@ -26,7 +26,7 @@ public class SeleniumUITest {
     @BeforeEach
     public void setUp() {
         FirefoxOptions options = new FirefoxOptions();
-        options.addArguments("--headless");
+        //options.addArguments("--headless");
         driver = new FirefoxDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
